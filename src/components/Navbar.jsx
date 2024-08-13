@@ -3,7 +3,7 @@ import { BsCart } from "react-icons/bs";
 
 function Navbar() {
   return (
-    <nav className="navbar light-nav navbar-expand-lg bg-body-tertiary mb-3">
+    <nav className="navbar light-nav navbar-expand-lg bg-body-tertiary mb-5">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Shopping

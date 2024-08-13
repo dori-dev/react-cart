@@ -6,3 +6,11 @@ body {
 .light-nav {
   background-color: #e3f2fd;
 }
+
+.card-bg {
+  background-color: #1a1c1e;
+}
+
+.border-light {
+  border-color: #777 !important;
+}
