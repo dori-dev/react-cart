@@ -1,13 +1,20 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
+// Components
 import Navbar from "./components/Navbar";
+
+// Pages
+import Shop from "./pages/Shop";
 
 function App() {
   return (
     <div>
       <Navbar></Navbar>
       <main className="container">
-        <h2>React Shopping Cart</h2>
+        <Routes>
+          <Route index element={<Shop />} />
+        </Routes>
       </main>
     </div>
   );
