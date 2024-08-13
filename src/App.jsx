@@ -1,9 +1,14 @@
 import React from "react";
 
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <div>
-      <h2>React Shopping Cart</h2>
+      <Navbar></Navbar>
+      <main className="container">
+        <h2>React Shopping Cart</h2>
+      </main>
     </div>
   );
 }
