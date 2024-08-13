@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCart } from "react-icons/bs";
 
 function Navbar() {
   return (
@@ -26,7 +27,8 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link align-self-center" href="#">
+                <BsCart className="mx-1 mb-1"></BsCart>
                 Cart
               </a>
             </li>
