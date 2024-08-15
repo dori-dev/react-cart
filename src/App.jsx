@@ -1,22 +1,20 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-// Components
 import Navbar from "./components/Navbar";
-
-// Pages
 import Shop from "./pages/Shop";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <div>
+    <CartProvider>
       <Navbar></Navbar>
       <main className="container">
         <Routes>
           <Route index element={<Shop />} />
         </Routes>
       </main>
-    </div>
+    </CartProvider>
   );
 }
 
