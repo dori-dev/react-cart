@@ -28,18 +28,24 @@ function Cart({ show, close }) {
                 <p>The Product two, price 44, count 3</p>
                 <p>The Product three, price 44, count 1</p>
               </div>
-              <div className="modal-footer bg-dark row">
-                <button
-                  onClick={close}
-                  type="button"
-                  className="btn btn-secondary col-4"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" className="btn btn-primary col-7">
-                  Continue
-                </button>
+              <div className="modal-footer bg-dark">
+                <div className="row w-100">
+                  <div className="col-5">
+                    <button
+                      onClick={close}
+                      type="button"
+                      className="btn btn-secondary w-100"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                  <div className="col-7">
+                    <button type="button" className="btn btn-primary w-100">
+                      Continue
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
