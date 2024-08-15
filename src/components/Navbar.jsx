@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BsCart } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 import Cart from "./Cart";
 
@@ -18,9 +19,9 @@ function Navbar() {
     <>
       <nav className="navbar light-nav navbar-expand-lg bg-body-tertiary mb-5">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             Shopping
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -35,9 +36,9 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <button
