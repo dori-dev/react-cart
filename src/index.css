@@ -4,7 +4,11 @@ body {
 }
 
 .light-nav {
-  background-color: #e3f2fd;
+  background-color: #758694 !important;
+}
+
+.navbar * {
+  color: #fafafa !important;
 }
 
 .card-bg {
