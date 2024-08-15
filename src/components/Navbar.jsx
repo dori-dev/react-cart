@@ -14,8 +14,6 @@ function Navbar() {
     setShowModal(false);
   };
 
-  console.log(showModal);
-
   return (
     <>
       <nav className="navbar light-nav navbar-expand-lg bg-body-tertiary mb-5">
