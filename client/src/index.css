@@ -1,0 +1,42 @@
+body {
+  background-color: #111;
+  color: #fafafa;
+}
+
+.light-nav {
+  background-color: #758694 !important;
+}
+
+.navbar * {
+  color: #fafafa !important;
+}
+
+.card-bg {
+  background-color: #1a1c1e;
+}
+
+.border-light,
+.modal * {
+  border-color: #777 !important;
+}
+
+.bg-dark {
+  background-color: #1a1c1e;
+}
+
+.modal {
+  background-color: rgba(61, 61, 61, 0.5);
+}
+
+.cart-item > div {
+  align-self: center !important;
+}
+
+.cart-bg {
+  background-color: #272829;
+}
+
+.total-price {
+  width: fit-content;
+  border-bottom: 1px solid #ccc !important;
+}
