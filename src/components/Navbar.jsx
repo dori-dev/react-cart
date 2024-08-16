@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { BsCart } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import Cart from "./Cart";
+import { CartContext } from "../context/CartContext";
 
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
+
+  const cart = useContext(CartContext);
+  const cartItemsCount = cart.items.length;
 
   const handleShow = () => {
     setShowModal(true);
@@ -47,7 +51,7 @@ function Navbar() {
                   className="nav-link align-self-center"
                 >
                   <BsCart className="mx-1 mb-1"></BsCart>
-                  Cart
+                  Cart ({cartItemsCount})
                 </button>
               </li>
             </ul>
@@ -55,7 +59,7 @@ function Navbar() {
               <input
                 className="form-control me-2 border-black"
                 type="search"
-                placeholder="Search"
+                placeholder="Type Something..."
                 aria-label="Search"
               />
               <button className="btn btn-success" type="submit">
