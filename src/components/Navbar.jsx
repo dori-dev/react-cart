@@ -69,7 +69,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <Cart show={showModal} close={handleClose} />
+      {showModal ? <Cart close={handleClose} /> : <></>}
     </>
   );
 }
